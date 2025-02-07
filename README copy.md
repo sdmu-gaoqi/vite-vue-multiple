@@ -9,7 +9,7 @@
 │   ├── store
 │   │     └── modules // 模块数据
 │   ├── services
-│   ├── project
+│   ├── pages
 │   ├── components
 │   ├── env
 │   ├── constant // 常量
@@ -56,9 +56,3 @@ wa-window-vue 工具库
 
 默认使用wx作为自适应css单位 可在vite.config.ts的postCssPxToRem配置unit 当css文件使用配置的单位时 会根据html字体大小转成相应的rem
 html 字体大小在 src\style.css 文件设置
-
-## 快速创建项目
-
-```sh
-yarn create:project
-```

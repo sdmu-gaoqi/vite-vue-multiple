@@ -1,0 +1,117 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #6a6d82;
+  background-color: #242424;
+
+  font-synthesis: none;
+  /* stylelint-disable-next-line value-keyword-case */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (width <=420px) {
+  html {
+    font-size: calc(100vw / 23.4375);
+  }
+}
+
+@media screen and (width >=420px) {
+  html {
+    font-size: calc(18px + 4 * (100vw - 420px) / 580);
+  }
+}
+
+@media screen and (width >=1000px) {
+  html {
+    font-size: calc(22px + 5 * (100vw - 1000px) / 1000);
+  }
+}
+
+@media screen and (aspect-ratio <=1920 / 969) {
+  html.pc-app {
+    font-size: calc(100vw / 60);
+  }
+}
+
+@media screen and (height <=545px) {
+  html.pc-app {
+    font-size: 18px;
+  }
+}
+
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  height: 100%;
+  overflow: hidden auto;
+}
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.card {
+  padding: 2em;
+}
+
+#app {
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  background: #f3f4ff;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #fff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
